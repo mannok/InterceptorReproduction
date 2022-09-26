@@ -12,6 +12,8 @@ namespace InterceptorReproduction
     {
         public override void PreInitialize()
         {
+            MeasureDurationInterceptorRegistrar.Initialize(IocManager.IocContainer.Kernel);
+
             Configuration.Authorization.Providers.Add<InterceptorReproductionAuthorizationProvider>();
         }
 
