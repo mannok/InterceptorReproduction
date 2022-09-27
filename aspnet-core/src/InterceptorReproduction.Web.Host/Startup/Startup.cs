@@ -85,7 +85,8 @@ namespace InterceptorReproduction.Web.Host.Startup
                         ? "log4net.config"
                         : "log4net.Production.config"
                     )
-                )
+                ),
+                false
             );
         }
 
